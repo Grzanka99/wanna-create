@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
 const prepare = require('../lib/prepare');
+const install = require('../lib/install');
 const minimist = require('minimist');
 
 const args = minimist(process.argv.slice(2), {
   alias: {
     p: 'prepare',
     h: 'help',
+    i: 'install',
   },
 });
 
@@ -17,3 +19,4 @@ if (args.h || args.h) {
 }
 
 if (args.hasOwnProperty('p') || args.hasOwnProperty('prepare')) prepare();
+if (args.hasOwnProperty('i') || args.hasOwnProperty('install')) install();

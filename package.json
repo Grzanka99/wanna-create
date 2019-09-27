@@ -16,6 +16,7 @@
   "author": "Cezary Grzanka",
   "license": "MIT",
   "dependencies": {
+    "prettier": "^1.18.2",
     "readline-sync": "^1.4.10"
   }
 }
