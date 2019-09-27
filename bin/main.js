@@ -18,5 +18,5 @@ if (args.h || args.h) {
   );
 }
 
-if (args.hasOwnProperty('p') || args.hasOwnProperty('prepare')) prepare();
-if (args.hasOwnProperty('i') || args.hasOwnProperty('install')) install();
+if (args.hasOwnProperty('p') || args.hasOwnProperty('prepare')) prepare(args.p || args.prepare);
+if (args.hasOwnProperty('i') || args.hasOwnProperty('install')) install(args.i || args.install);
