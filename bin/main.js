@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
+const minimist = require('minimist');
 const prepare = require('../lib/prepare');
 const install = require('../lib/install');
-const minimist = require('minimist');
 
 const args = minimist(process.argv.slice(2), {
   alias: {
