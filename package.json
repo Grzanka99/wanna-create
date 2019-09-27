@@ -1,11 +1,18 @@
 {
   "name": "wanna-create",
   "version": "1.0.0",
-  "description": "My own script to create some stuffs",
+  "description": "My own script to do some usefull things",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "directories": {
+    "lib": "lib"
   },
+  "scripts": {
+    "test": "node ./bin/main.js"
+  },
+  "bin": {
+    "wanna": "./bin/main.js"
+  },
+  "preferGlobal": true,
   "author": "Cezary Grzanka",
-  "license": "ISC"
+  "license": "MIT"
 }
